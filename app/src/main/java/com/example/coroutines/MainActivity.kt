@@ -14,7 +14,6 @@ class MainActivity : AppCompatActivity() {
 
     private val RESULT_1 = "Result #1"
     private val RESULT_2 = "Result #2"
-    private val count
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -54,7 +53,7 @@ class MainActivity : AppCompatActivity() {
 
     private suspend fun getResult2FormApi(): String{
         logThread("getResult1FormApi")
-        delay(1000) // it will delay the single coroutine, not the entire thread.
+        delay(2000) // it will delay the single coroutine, not the entire thread.
         return RESULT_2
     }
 
