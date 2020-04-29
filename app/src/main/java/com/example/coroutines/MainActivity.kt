@@ -14,6 +14,7 @@ class MainActivity : AppCompatActivity() {
 
     private val RESULT_1 = "Result #1"
     private val RESULT_2 = "Result #2"
+    private val count
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
